@@ -1,0 +1,49 @@
+{
+    "results": [{
+        "columns": ["user", "entity"],
+        "data": [{
+            "graph": {
+                "nodes": [{
+                    "id": "1",
+                    "labels": ["User"],
+                    "properties": {
+                        "userId": "eisman"
+                    }
+                }, {
+                    "id": "2",
+                    "labels": ["Phone"],
+                    "properties": {
+                        "value": "555-555-5555"
+                    }
+                }, {
+                    "id": "3",
+                    "labels": ["Address"],
+                    "properties": {
+                        "zipCode": "90210",
+                        "country": "US",
+                        "city": "Beverly Hills",
+                        "state": "CA"
+                    }
+                }],
+                "relationships": [{
+                    "id": "1",
+                    "type": "HAS_PHONE_NUMBER",
+                    "startNode": "1",
+                    "endNode": "2",
+                    "properties": {
+                        "from": 1473581532586
+                    }
+                }, {
+                    "id": "2",
+                    "type": "HAS_ADDRESS",
+                    "startNode": "1",
+                    "endNode": "3",
+                    "properties": {
+                        "from": 1473581532586
+                    }
+                }]
+            }
+        }]
+    }],
+    "errors": []
+}
